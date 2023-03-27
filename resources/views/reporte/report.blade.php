@@ -42,7 +42,7 @@
 		</tr>
 		<tr>
 			<th>Precio</th>
-			<td> {{ $inv->price }} </td>
+			<td> {{ number_format($inv->price,2) }} </td>
 		</tr>
         <tr>
 			<th>Cantidad</th>

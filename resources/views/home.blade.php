@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="center">
 
-                        <p class="center">Este es el inicio</p>
+                    <img src="{{ asset('images/control.avif') }}" height="900" style="border-radius: 20px">
 
                     </div>
                 </div>
