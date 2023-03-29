@@ -5,7 +5,7 @@
     border-radius: 5px;
   }
 </style>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="{{ url('/') }}">
                 <img src="{{ asset('images/ICON_1.png') }}" height="50" width="175">
@@ -19,11 +19,11 @@
             @can('proveedor.item.index')
             <a class="nav-item nav-link" href="{{ route('cliente.item.index') }}">Proveedores</a>
             @endcan
-            <a class="nav-item nav-link" href="{{ route('report.index') }}">Reporte</a>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle text-white" href="#" tabindex="-1" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
+                    <img src="{{ asset('images/iconos/admin.ico') }}" height="45" style="border-radius: 100px">
                     {{ Auth::user()->name }}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -34,7 +34,9 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
+           
         </div>
+
         </li>
         </div>
 
