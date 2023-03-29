@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/admin/users',[UserController::class,'index'])->name('admin.home');
     Route::get('/admin/user/create',[UserController::class,'create'])->name('admin.user.index');
     Route::post('/admin/user/create.store',[UserController::class,'store'])->name('admin.user.create');
+    Route::delete('/admin/user/delete/{id}',[UserController::class,'destroy'])->name('admin.user.delete');
 
     Route::get('/proveedor/inventary',[InventaryController::class,'index'])->name('proveedor.item.index');
     Route::get('/proveedor/inventary/state/{id}',[InventaryController::class,'show'])->name('proveedor.state.index');

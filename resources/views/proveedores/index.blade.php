@@ -41,6 +41,8 @@
 
                                     <form action="{{ route('cliente.item.delete',$p->id) }}" method="POST">
                                         {{ csrf_field() }}
+
+
                                         <input type="submit" class="btn btn-sm btn-outline-danger" title="eliminar" value="Eliminar">
                                     </form>
 

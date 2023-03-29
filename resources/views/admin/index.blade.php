@@ -24,8 +24,9 @@
                                     <th class="center"> {{ $u->email }} </th>
                                     <th class="center"> {{ $u->created_at }} </th>
                                     <th class="center">
-                                        <form action="#" method="post">
+                                        <form action="{{ route('admin.user.delete',$u->id) }} " method="post">
                                             @csrf
+                                            {{ method_field('DELETE') }}
                                             <input type="submit" class="btn btn-sm btn-outline-danger" title="eliminar" value="Eliminar">
                                         </form>
                                     </th>

@@ -67,6 +67,8 @@ class UserController extends Controller
 
     public function destroy($id)
     {
-        //
+        User::destroy($id);
+
+        return redirect()->route('admin.home');
     }
 }

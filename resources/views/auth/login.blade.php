@@ -81,8 +81,6 @@
 
                 <div class="text-center">
 
-                    <a class="text-white" href="{{ route('register') }}">¿No tienes una cuenta? Registrate aqui</a>
-
                 </div>
                 
                 <div class="mb-4">
